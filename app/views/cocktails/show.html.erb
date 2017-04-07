@@ -6,7 +6,7 @@
       <ul class="lst">
         <% @cocktail.doses.each do |dose| %>
           <li>
-            <%= dose.description %> tsp of <%= dose.ingredient.name %>
+            <%= dose.description %> of <%= dose.ingredient.name %>
             <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete do %>
               <i class="fa fa-minus-circle btn-delete colz" aria-hidden="true"></i>
             <% end %>
