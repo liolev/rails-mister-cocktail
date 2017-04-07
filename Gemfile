@@ -36,6 +36,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave'
 
 # Front gems
 gem "bootstrap-sass"
