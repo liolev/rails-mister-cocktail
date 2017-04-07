@@ -3,9 +3,7 @@
 @import "navbar";
 
 .index {
-  font-family: 'Oxygen', sans-serif;
   font-size: 40px;
-  font-weight: lighter;
   color: #59569D;
 }
 
@@ -13,4 +11,13 @@
   font-family: 'Oxygen', sans-serif;
   font-size: 40px;
   font-weight: lighter;
+}
+
+.imgshow {
+  margin: 25px;
+}
+
+
+.lst {
+  list-style-type: none;
 }
