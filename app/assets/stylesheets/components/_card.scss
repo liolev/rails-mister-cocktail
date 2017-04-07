@@ -6,7 +6,14 @@
   position: relative;
   margin-bottom: 30px;
   margin-top: 15px;
+  font-size: 2em;
+  transition: all .3s ease-in-out;
 }
+
+.card:hover {
+  transform: scale(1.1);
+}
+
 .card-user {
   position: absolute;
   right: 10px;
