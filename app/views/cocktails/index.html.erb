@@ -1,16 +1,26 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(89,86,157,0.7) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_url("background.jpg")%>');">
-  <div class="banner-content">
-    <h1>WELCOME TO</h1>
-     <%= link_to cocktails_path do %>
-      <%= image_tag "cocktail.png", width: "500px" %>
-    <% end %>
-    <p class="indexp">The best ressource for cocktails !</p>
-    <%= link_to "Add a cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
-  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <h1>WELCOME TO</h1>
+            <%= link_to cocktails_path do %>
+              <%= image_tag "cocktail.png", width: "500px" %>
+            <% end %>
+            <p class="indexp">The best ressource for cocktails !</p>
+            <%= link_to "Add a cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
+        </div>
+      </div>
+    </div>
 </div>
 
 
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
 
+    </div>
+  </div>
+</div>
 
 <h1 class="text-center index">THE COCKTAIL LIST</h1>
 
