@@ -1,35 +1,55 @@
-<div class="adm">
-  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(89,86,157,0.7) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_url("background.jpg")%>');">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-              <h1>WELCOME TO</h1>
-              <%= link_to cocktails_path do %>
-                <%= image_tag "cocktail.png", width: "400px" %>
-              <% end %>
-              <p class="indexp">The best ressource for cocktails !</p>
-              <%= link_to "Add a cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
+<div id="scroll-animate">
+  <div id="scroll-animate-main">
+    <div class="wrapper-parallax">
+      <header>
+        <div class="ttl">
+          <div class="banner" style="background-image: linear-gradient(-225deg, rgba(89,86,157,0.7) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_url("background.jpg")%>');">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                      <h1>WELCOME TO</h1>
+                      <%= link_to cocktails_path do %>
+                        <%= image_tag "cocktail.png", width: "400px" %>
+                      <% end %>
+                      <p class="indexp">The best ressource for cocktails !</p>
+                      <%= link_to "Add a cocktail", new_cocktail_path, class: "navbar-wagon-item navbar-wagon-button btn" %>
+                  </div>
+                </div>
+              </div>
           </div>
-        </div>
-      </div>
-  </div>
+      </header>
 
+      <section class="content">
+          <div class="container text-center menu">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <%= image_tag "menu.png", width: "300px" %>
+              </div>
+            </div>
+          </div>
 
-  <div class="container text-center menu">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-        <%= image_tag "menu.png", width: "300px" %>
-      </div>
-    </div>
-  </div>
+          <div class="container">
+            <div class="row">
+              <% @cocktails.each_with_index do |cocktail, index| %>
+                <div class="col-xs-12 col-sm-4">
+                  <%= render "card", cocktail: cocktail %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+      </section>
 
-  <div class="container">
-    <div class="row">
-      <% @cocktails.each_with_index do |cocktail, index| %>
-        <div class="col-xs-12 col-sm-4">
-          <%= render "card", cocktail: cocktail %>
-        </div>
-      <% end %>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
